@@ -107,12 +107,7 @@ export function publishQuestion(question: Question): Question {
 }
 
 /**
- * Create a{
-        ...oldQuestion,
-        id,
-        name: `Copy of ${oldQuestion.name}`,
-        published: false,
-    }on based on the old question, copying over its `body`, `type`,
+ * Create a duplicate question on based on the old question, copying over its `body`, `type`,
  * `options`, `expected`, and `points` without changes. The `name` should be copied
  * over as "Copy of ORIGINAL NAME" (e.g., so "Question 1" would become "Copy of Question 1").
  * The `published` field should be reset to false.
@@ -143,16 +138,7 @@ export function addOption(question: Question, newOption: string): Question {
 /**
  * Consumes an id, name, and two questions, and produces a new question.
  * The new question will use the `body`, `type`, `options`, and `expected` of the
- * `content{
-        id,
-        name,
-        body: contentQuestion.body,
-        type: contentQuestion.type,
-        options: contentQuestion.options,
-        expected: contentQuestion.expected,
-        points,
-        published: false,
-    }second question will provide the `points`.
+ * content question, and the second question will provide the `points`.
  * The `published` status should be set to false.
  * Notice that the second Question is provided as just an object with a `points`
  * field; but the function call would be the same as if it were a `Question` type!
