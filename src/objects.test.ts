@@ -48,7 +48,7 @@ describe("Testing the object functions", () => {
     //////////////////////////////////
     // makeBlankQuestion
 
-    test("(3 pts) Testing the makeBlankQuestion function", () => {
+    test("Testing the makeBlankQuestion function", () => {
         expect(
             makeBlankQuestion(1, "Question 1", "multiple_choice_question"),
         ).toEqual(BLANK_QUESTIONS[0]);
@@ -66,7 +66,7 @@ describe("Testing the object functions", () => {
 
     ///////////////////////////////////
     // isCorrect
-    test("(3 pts) Testing the isCorrect function", () => {
+    test("Testing the isCorrect function", () => {
         expect(isCorrect(ADDITION_QUESTION, "4")).toEqual(true);
         expect(isCorrect(ADDITION_QUESTION, "2")).toEqual(false);
         expect(isCorrect(ADDITION_QUESTION, " 4\n")).toEqual(true);
@@ -85,7 +85,7 @@ describe("Testing the object functions", () => {
 
     ///////////////////////////////////
     // isValid
-    test("(3 pts) Testing the isValid function", () => {
+    test("Testing the isValid function", () => {
         expect(isValid(ADDITION_QUESTION, "4")).toEqual(true);
         expect(isValid(ADDITION_QUESTION, "2")).toEqual(true);
         expect(isValid(ADDITION_QUESTION, " 4\n")).toEqual(true);
