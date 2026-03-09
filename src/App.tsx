@@ -58,15 +58,15 @@ function App(): React.JSX.Element {
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload. Hi it is Khang.
             </p>
-            <hr></hr>
-            {/* <DoubleHalf></DoubleHalf> */}
-            <hr></hr>
+            <hr />
+            <DoubleHalf></DoubleHalf>
+            <hr />
             <ChooseTeam></ChooseTeam>
-            <hr></hr>
+            <hr />
             <ColoredBox></ColoredBox>
-            <hr></hr>
+            <hr />
             <ShoveBox></ShoveBox>
-            <hr></hr>
+            <hr />
             <Counter></Counter>
             <hr />
             <RevealAnswer></RevealAnswer>
