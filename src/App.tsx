@@ -7,6 +7,10 @@ import { TwoDice } from "./components/TwoDice";
 import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { DoubleHalf } from "./bad-components/DoubleHalf";
+import { ColoredBox } from "./bad-components/ColoredBox";
+import { ShoveBox } from "./bad-components/ShoveBox";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
 
 function App(): React.JSX.Element {
     return (
@@ -54,7 +58,15 @@ function App(): React.JSX.Element {
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload. Hi it is Khang.
             </p>
-            <hr></hr>
+            <hr />
+            <DoubleHalf></DoubleHalf>
+            <hr />
+            <ChooseTeam></ChooseTeam>
+            <hr />
+            <ColoredBox></ColoredBox>
+            <hr />
+            <ShoveBox></ShoveBox>
+            <hr />
             <Counter></Counter>
             <hr />
             <RevealAnswer></RevealAnswer>
