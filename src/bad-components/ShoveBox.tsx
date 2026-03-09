@@ -31,7 +31,9 @@ export function ShoveBox(): React.JSX.Element {
             <span>The box is at: {position}</span>
             <div>
                 <ShoveBoxButton
-                    onShove={() => setPosition(position + 4)}
+                    onShove={() => {
+                        setPosition(position + 4);
+                    }}
                 ></ShoveBoxButton>
                 <MoveableBox position={position}></MoveableBox>
             </div>
