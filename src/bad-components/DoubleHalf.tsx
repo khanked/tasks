@@ -18,8 +18,16 @@ export function DoubleHalf(): React.JSX.Element {
             <div>
                 The current value is: <span>{dhValue}</span>
             </div>
-            <Doubler onDouble={() => setDhValue(2 * dhValue)}></Doubler>
-            <Halver onHalve={() => setDhValue(0.5 * dhValue)}></Halver>
+            <Doubler
+                onDouble={() => {
+                    setDhValue(2 * dhValue);
+                }}
+            ></Doubler>
+            <Halver
+                onHalve={() => {
+                    setDhValue(0.5 * dhValue);
+                }}
+            ></Halver>
         </div>
     );
 }
